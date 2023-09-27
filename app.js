@@ -217,7 +217,40 @@ for (let i = 1; i <= 10; i++) {
 }
 alert(resultado = numero)*/
 
+
+
+
+
+//pequeño minijuego de decisiones ver 1.01:
+saludar()
+function saludar() {
+    alert("Hola usuario......")
+    console.log(" Hola usuario ");
+}
+
+let nombreUsuario = prompt("Nombre de usuario")
+let apellidoUsuario = prompt("Apellido del usuario")
+
+if((nombreUsuario !="") && (apellidoUsuario !="")){
+    console.log("Nombre: " + nombreUsuario + " Apellido: " + apellidoUsuario)
+}else{
+    let entrada = prompt("Ingrese un texto o ESC para interrumpir")
+
+let texto = ""
+
+while (nombreUsuario != "" && nombreUsuario != "esc") {
+    texto += entrada + " "
+    entrada = prompt("Ingrese un texto o ESC para interrumpir")
+    console.log("todos los campos son obligatorios")
+ }
+}
+
+alert(`BIENVENIDO A DECISION MACHT , ${nombreUsuario} ${apellidoUsuario}`)
+
 alert(" Dame el celular ")
+
+
+// ACTO O
 
 let decision = prompt(`Elija su desicion:
 1: le doy el celular
@@ -226,59 +259,64 @@ let decision = prompt(`Elija su desicion:
 `)
 switch (decision) {
     case "1":
-        console.log("le doy el celular")
+        console.log("Le doy el celular")
         alert("Se va correindo")
-        alert("sobreviviste a la al acto 1 ")
+        alert("Sobreviviste al acto 1 ")
         break;
     case "2":
-        console.log("no le doy el celular")
-        alert("no le doy el celular")
-        alert("*te tira dos tiros")
-        alert("moriste")
-        let entrada = prompt("RECARGA LA PAGINA PARA TOMAR OTRA DECISON, AVISO VOLVERAS A EMPEZAR DE 0")
+        console.log("No le doy el celular")
+        alert("No le doy el celular")
+        alert("*Te tira dos tiros")
+        alert("Moriste")
+        let entrada = prompt("PONGA ESC PARA RECARGAR LA PAGINA Y TORMAR OTRA DECISION")
 
         let texto = ""
         
-        while (entrada != "ESC" && entrada != "esc") {
+        while (entrada != "ESC" && entrada != "ESC") {
             texto += entrada + " "
-            entrada = prompt("RECARGA LA PAGINA PARA TOMAR OTRA DECISON, AVISO VOLVERAS A EMPEZAR DE 0")
+            entrada = prompt("PONGA ESC PARA RECARGAR LA PAGINA Y TORMAR OTRA DECISION")
         }
         break;
     default:
-        console.log("me voy corriendo ")
-        alert("el ladron te sigue")
+        console.log("Me voy corriendo ")
+        alert("El ladron te sigue")
         break;
 }
 
-alert("corriste hasta una callejon")
+// ACTO 1
+
+alert("Corriste hasta una callejon")
 let acto1 = prompt(`Elija su decision:
-1: saltas a una ventana a tu derecha
-2: te escondes antes de que llegue el ladron
-3: te rendis ante el ladron
+1: Saltas a una ventana a tu derecha
+2: Te escondes antes de que llegue el ladron
+3: Te rendis ante el ladron
 `)
 switch (acto1) {
     case "1":
-        console.log("saltas a una ventana abierta a tu derecha")
-        alert("saltas sin dudar a la ventana y te encuentras en un geriatrico")
-        alert("te pones a investigar y te das cuenta que el lugar pasan cosas raras")
-        alert("sobreviviste a la al acto 1")
+        console.log("Saltas a una ventana abierta a tu derecha")
+        alert("Saltas sin dudar a la ventana y te encuentras en un geriatrico")
+        alert("Te pones a investigar y te das cuenta que el lugar pasan cosas raras")
+        alert("Sobreviviste a la al acto 1")
         break;
     case "2":
-        console.log("te escondes antes de que llegue el ladron")
-        alert("el ladron te busca, no te encuntra y se va")
-        alert("tienes un momento de respiro asi que sales de tu escondite")
-        alert("caminas sin rumbo y con miedo que el ladron te encuentre")
-        alert("fin del acto 1")
+        console.log("Te escondes antes de que llegue el ladron")
+        alert("El ladron te busca, no te encuntra y se va")
+        alert("Tienes un momento de respiro asi que sales de tu escondite")
+        alert("Caminas sin rumbo y con miedo que el ladron te encuentre")
+        alert("Fin del acto 1")
         break;
     default:
-        console.log("te rendis ante el ladron")
-        alert("el ladron te insulta te pega y te dispara 5 veces")
-        alert("mueres fin del acto 1")
-        let entrada = prompt("RECARGA LA PAGINA PARA TOMAR OTRA DECISON, AVISO VOLVERAS A EMPEZAR DE 0")
+        console.log("Te rendis ante el ladron")
+        alert("El ladron te insulta te pega y te dispara 5 veces")
+        alert("Mueres fin del acto 1")
+        let entrada = prompt("PONGA R PARA RECARGAR LA PAGINA Y TORMAR OTRA DECISION")
         let texto = ""
         while (entrada != "ESC" && entrada != "esc") {
             texto += entrada + " "
-            entrada = prompt("RECARGA LA PAGINA PARA TOMAR OTRA DECISON, AVISO VOLVERAS A EMPEZAR DE 0")
+            entrada = prompt("PONGA ESC PARA RECARGAR LA PAGINA Y TORMAR OTRA DECISION")
         }
         break;
 }
+
+//PARTE DEL ACTO 0
+
