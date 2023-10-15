@@ -217,11 +217,562 @@ for (let i = 1; i <= 10; i++) {
 }
 alert(resultado = numero)*/
 
+// OBJETO LITERAL
+/*const producto = {
+    //propiedades
+    //clave:valor  // key:value
+    nombre: "monitor de 24 pulgadas",
+    precio: 2000,
+    disponible: true,
+}
+const nombreProducto = producto.nombre
+
+// console.log(nombreproducto)
+
+//CRUD (CREATE,READ,UPDATE,DELETE)
+
+//CREATE
+producto.imagen = "imagen.jpg"
+//UPDATE
+producto.disponible = false
+//DELETE
+delete producto.precio
+console.log(producto)
+
+//DESESTRUCTURACION
+//sacar y guardar como una variable, una propiedad de un objeto
+
+const {nombre, imagen, disponible} = producto
+console.log(nombre)
+console.log(imagen)
+console.log(disponible)
+*/
+
+//OBJETO CONSTRUCTOR
+
+/*class producto {
+    constructor(nombre, precio){
+        this.nombre = nombre
+        this.precio = precio
+        this.disponible = true
+        //metodo -> acciones del objeto
+        this.saludar = function (){
+            console.log("Saludos, soy " + this.nombre)
+        }
+    }
+}*/
+
+//instancias
+
+/*const producto2 = new producto("teclado", 1000)
+const producto3 = new producto("mouse", 500)*/
+
+// Arrays
+
+// Ejemplo 1
+/*let arreglo = [true, "coder", 25, "house", false, 100]
+
+arreglo[2] = 300
+arreglo[6] = "camion"
+console.log(arreglo[0])*/
+
+// recorrido de los valores de un array
+
+/*let arreglo = [true, "coder", 25, "house", false, 100]*/
+
+
+// longitud del arreglo 
+
+/*console.log(arreglo.length)*/
+
+// Metodo para agregar elementos
+
+// PUSH
+
+/*arreglo.push("elemento pusheado")
+
+console.log(arreglo)*/
+
+/*const carrito = []
+
+const miProducto = {
+    marca: "a",
+    precio: 2000
+}
+/*carrito.push("Primer producto")
+carrito.push("Segundo producto")
+
+console.log(carrito)*/
+
+// UNSHIFT agregar elementos al comienzo del array
+
+/*const arreglo = ["primer", 2, false]
+
+console.log(arreglo)
+arreglo.unshift("otro elemento")*/
+
+// eliminar el ultimo elemento de un arreglo
+
+// POP
+
+/*const carrito = ["a", "b", "c"]
+//carrito.pop()
+console.log(Carrito)*/
+// eliminar el primer elemento de un arreglo
+
+// SHIFT
+
+//carrito.shift
+
+// Splice
+
+// eliminar elemento de cualquier posicion
+
+//idice - cantidad de elementos a eliminar
+
+//const nombres = ["agustin", "alex", "damian", "daniel", "emiliano"]
+
+//nombres.slice(1,2)
+
+
+// JOIN
+
+//console.log(nombres.join("."))
+
+/*const categoriaA = ["A", "b", "C"]
+const categoriaB = ["D", "E", "F"]
+
+// CONCAT
+const miCatalogo = categortiaA.concat
+(categoriaB)*/
+
+
+// INDEXOF
+
+/*const nombres = ["agustin", "alex", "damian", "daniel", "emiliano"]
+
+
+console.log(nombre.indeOF("emiliano"))*/
+
+// INCLUDES true // false
+
+//console.log(nombres.includes("coder"))
+
+// Ejemplos para cargar datos y almacenar en una array
+
+/*const listaNombres = []
+let cantidad = 5
+
+do{
+    let entrada = prompt("ingrese un nombre")
+    listaNombres.push(entrada)
+    console.log(listaNombres.length)
+}while (listaNombres.length != cantidad);
+
+ const nuevaLista = listaNombres.concat(["Q", "w", "E"])
+ 
+ console.log(nuevaLista)*/
+
+// FOR OF
+
+/*const producto = [
+    {id: 1, marca: "producto a", precio: 2000 },
+    {id: 2, marca: "producto b", precio: 4000 },
+    {id: 3, marca: "producto c", precio: 6000 },
+]
+for (const producto of lista) {
+    console.log(producto.marca)
+}
+
+/*function sumar (a, b){
+    return a + b 
+}
+
+function restar (a, b){
+    return a - b 
+}
+
+function multiplicar(a, b){
+    return a * b 
+}
+
+function calcularOperacion(a, b, operacion){
+    return operacion (a, b)
+}
+
+const resultadoSuma = calcularOperacion(5,3,sumar)
+const resultadoResta = calculadorOperacion(5,3, resta)
+const resultadoMultiplicador = calcularOperacion (5,3, multiplicar)
+
+
+console.log(resultadoMultiplicador) */
+
+
+// CALLBACKS (FUNCIONES COMO PARAMETROS DE OTRAS FUNCIONES)
+//ejemplo 1
+/*function saludar (nombre, callback){
+    console.log("Saludos " + nombre + "!")
+    callback()
+}
+
+function despedir(){
+    console.log("Hasta luego")
+}
+
+saludar("juan", despedir)*/
+
+//callback= una función que se pasa como parámetro
+//ejemplo 2
+
+/*function realizarOperacion(a, b, callback){
+    const resultado = a + b
+    callback(resultado)
+}
+
+function mostrarResultado(res){
+    console.log("el resultado es: " + res)
+}
+
+realizarOperacion(5,3, mostrarResultado)*/
+
+
+// FOR EACH 
+ /*const pendientes = ["DOM","Apis", "Json", "Librerias"]*/
+
+/*pendientes.forEach((p, i)=>{
+    console.log('${i}: ${p}')
+})*/
+
+// MAP
+
+/*pendientes.map((p)=>{
+    console.log(p)
+})*/
+
+// REDUCE 
+ /*const carrito =[
+    {nombre: "Monitor", precio: 1000},
+    {nombre: "Teclado", precio: 2000},
+    {nombre: "Mouse", precio: 3000}
+ ]
+ 
+ let total = 0 
+
+ /*carrito.forEach((p) => (total += p.precio))
+console.log(total)
+
+let resultado = carrito.reduce((accum, p)=>{
+    return accum + p.precio 
+}, 0)
+console.log(resultado)*/
+
+
+/*const carrito =[
+    {nombre: "Monitor", precio: 1000},
+    {nombre: "Teclado", precio: 2000},
+    {nombre: "Mouse", precio: 3000}
+ ]
+
+ // FILTER
+
+let resultado = carrito.filter((p)=> p.nombre == "monitor")
+
+console.log(resultado)
+
+// FIND 
+
+let resultado2 = carrito.find((p)=> p.nombre == "monitor")
+
+console.log(resultado2)*/
+
+// MATH
+
+/*console.log(Math.PI)
+console.log(Math.max(53,43,1,23,78,100))
+
+console.log(Math.sqrt(9))
+console.log(Math.random())*/
+
+/*const pi = Math.PI
+console.log(pi)
+console.log(Math.ceil(PI)
+console.log(Math.floor(PI))
+console.log(Math.round(pi))*/
+
+// FECHAS
+
+/*console.log(new date())
+let ahora = new date()
+
+let anio = ahora.getfullyear()
+
+let anio = ahora.getMonth()
+
+console.log(ahora)*/
+
+
+// METODO TRADICIONAL 
+
+ /*const navbar = document.getElementsByClassName("form-label")
+ const span = document.getElementsByTagName("span")
+ const email = document.getElementById("name")
+
+console.log(email)*/
+
+
+// METODO MODERNO
+
+//solo trae un solo elemento 
+//const navbar = document.querySelector(".form-label")
+// trae todos los elementos con la misma clase 
+//const navbar = document.querySelectorAll(".form-label")
+
+// MODIFICADOR DE CONTENIDO
+
+//const titulo = document.querySelector("h1").textContent = "nuevo titulo"
+//console.log(titulo)
+
+// Eliminar contenido
+
+/*const subtitle = document.querySelector("h3")
+subtitle.remove*/
+
+
+// AGREGAR CONTENIDO AL HTML
+
+// CREAR EL ELEMENTO 
+//let agregado = document.createElement("p")
+
+// INYEECTAR EL ELEMENTO 
+//agregado.innerHTML = "parrafo de demostracion"
+
+// AGREGAR EL ELEMENTO AL HTML 
+//document.body.appendChild(agregado)
+
+// AGREGAR ELEMENTOS DESDE UN ARRAY
+
+/*const catalogo = document.querySelector(".catalogo")
+console.log(catalogo)
+
+let otrosCursos = ["dese;o ux/ui", "react", "backend", "sql", "amazon"]
+
+for (let c of otrosCursos){
+    let listado = document.createElement("li")
+    listado.innerHTML = c
+    catalogo.appendChild(listado)
+}*/
+
+/*let cursos =[
+    {id: 1, titulo: "JSON", precio: 1000},
+    {id: 2, titulo: "react", precio: 1500},
+    {id: 3, titulo: "backend", precio: 2000}
+]
+console.log(cursos)
+
+for ( let c of cursos){
+    let contenedor = document.createElement("div")
+    contenedor.innerHTML =`
+    <h3>cursos: ${c.titulo}</h3>
+    <p>precio: ${c.precio}</p>
+
+    `
+    document.body.appendChild(contenedor)
+}*/
+
+//segunda pre entrega:
+//VARIABLES
+//FUNCIONES
+//OBJETOS
+//ARRAYS
+//MÉTODOS DE BÚSQUEDA Y FILTRADO EN ARRAYS
+
+
+/*let stickers =[
+    {id: 1, titulo: "StickerChiquitos", precio: 1000, medidas: "5,8,9"},
+    {id: 2, titulo: "StickersMedianos", precio: 1500, medidas: "10,12,15"},
+    {id: 3, titulo: "StickersGrandes", precio: 2000, medidas: "20, 25,30"}
+]
+console.log(stickers)
+
+
+for ( let c of stickers){
+    let contenedor = document.createElement("div")
+    contenedor.innerHTML =`
+    <h1>
+    <h3>stickers: ${c.titulo}</h3>
+    <p>Precio: ${c.precio}</p>
+    <p>Medidas: ${c.medidas}</p>
+
+    <button type="button" class="btn btn-primary btn-lg">Agregar al carrito</button>
+    
+    `
+    document.body.appendChild(contenedor)
+}*/
+ 
+class VideoJuego {
+    constructor(nombre, nacionalidad, equipo, edad,) {
+        this.nombre = nombre;
+        this.nacionalidad = nacionalidad;
+        this.equipo = equipo;
+        this.edad = edad;
+    }
+
+}
+// Datos de los goleadores
+let goleadores = [
+    { nombre: "E.Cavani(BOC) ", goles: 12 , equipo: "Boca", nacionalidad: "Uruguay", edad: "36"},
+    { nombre: "S.Toloza(IND) ", goles: 10 ,equipo: "Independiente", nacionalidad: "Argentina", edad: "20"},
+    { nombre: "L.Gondou (ARJ) ", goles: 9 ,equipo: "Argentinos Juniors", nacionalidad: "Argentina", edad: "22"},
+    { nombre: "S.Rondon (RIV) ", goles: 5 ,equipo: "River", nacionalidad: "Venezuela", edad: "34"},
+    {nombre: "T.Allende (GOD) ", goles: 3 ,equipo: "Godoy Cruz", nacionalidad: "Argentino", edad: "21"},
+    {nombre: "A.Bareire (SAN) ", goles: 1 ,equipo: "San Lorenzo", nacionalidad: "Paraguay", edad: "27"}
+    // Agrega más datos de goleadores 
+];
+
+
+function llenarTabla() {
+    let tabla = document.getElementById("tablaGoleadores");
+    for (let i = 0; i < goleadores.length; i++) {
+        let fila = document.createElement("tr");
+        let celdaNombre = document.createElement("td");
+        celdaNombre.textContent = goleadores[i].nombre;
+        let celdaGoles = document.createElement("td");
+        celdaGoles.textContent = goleadores[i].goles;
+        fila.appendChild(celdaNombre);
+        fila.appendChild(celdaGoles);
+        tabla.appendChild(fila);
+    }
+}
+
+console.table(goleadores);
+llenarTabla();
+
+   
 
 
 
 
-//pequeño minijuego de decisiones ver 1.01:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*class cliente  {
+    constructor(nombre, apellido){
+    this.nombre = joaquin
+    this.apellido = maio
+    this.disponible = true
+    }
+}
+
+
+const nombre = new cliente (joaquin, aceptado)
+console.log(nombre)
+
+
+
+
+
+
+//pequeño minijuego de decisiones ver 0.02:
 saludar()
 function saludar() {
     alert("Hola usuario......")
@@ -319,4 +870,4 @@ switch (acto1) {
 }
 
 //PARTE DEL ACTO 0
-
+*/
