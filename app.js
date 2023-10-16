@@ -608,8 +608,25 @@ for ( let c of stickers){
     `
     document.body.appendChild(contenedor)
 }*/
+saludar()
+function saludar() {
+    alert("Hola usuario......")
+    console.log(" Hola usuario ");
+}
+
+
+let nombreUsuario = prompt("Nombre de usuario")
+let apellidoUsuario = prompt("Apellido del usuario")
+
+alert ("Bienvenido a la tabla de goleadores de la liga")
+
+if((nombreUsuario !="") && (apellidoUsuario !="")){
+    console.log("Nombre: " + nombreUsuario + " Apellido: " + apellidoUsuario)
+}else{
+let texto = ""
+}
  
-class VideoJuego {
+class jugadores {
     constructor(nombre, nacionalidad, equipo, edad,) {
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
@@ -628,6 +645,17 @@ let goleadores = [
     {nombre: "A.Bareire (SAN) ", goles: 1 ,equipo: "San Lorenzo", nacionalidad: "Paraguay", edad: "27"}
     // Agrega más datos de goleadores 
 ];
+function jugador() {
+
+    let parametro = prompt("Ingrese el jugador a buscar:").trim().toLocaleUpperCase()
+    let resultado = goleadores.find((juego) => juego.nombre.toLocaleUpperCase().includes(parametro))
+
+    if (resultado != undefined) {
+        console.table(resultado)
+    } else {
+        console.warn("No hay resultado con el nombre", parametro);   
+    }
+}
 
 
 function llenarTabla() {
