@@ -1,23 +1,28 @@
 body{
-    background-color: gray;
+    background-color: rgb(146, 142, 142);
 }
 h1{
     font-family:'Courier New', Courier, monospace;
     color: white;
 }
+h1.subtitulo{
+    text-align: center;
+    font-size: 40px;
+}
 p{
     font-size: 25px;
+    color: #fff;
 }
-
 header{
     background-size: cover;
     background-position:center;
-    height: 300px;
+    width: 100%;
+    height: 200px;
     background-color: #000;
 }
 header h1{
     text-align: center;
-    font-size: 35px;
+    font-size: 120px;
     color: #fff;
     padding: 30px 0;
 }
@@ -192,7 +197,13 @@ header h1{
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
 }
-
+footer{
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+}
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 850px) {
     .contenedor {
