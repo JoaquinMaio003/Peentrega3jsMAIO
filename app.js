@@ -4,10 +4,6 @@ const obj = JSON.parse(enJson)
 console.log(obj)
 
 
-
-
-
-
 let carritoVisible = false;
 
 
@@ -202,3 +198,4 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
+
