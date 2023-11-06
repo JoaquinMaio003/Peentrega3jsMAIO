@@ -1,9 +1,9 @@
 body{
-    background-color: rgb(146, 142, 142);
+    background-color: rgb(255, 255, 255)
 }
 h1{
     font-family:'Courier New', Courier, monospace;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 h1.subtitulo{
     text-align: center;
@@ -11,7 +11,7 @@ h1.subtitulo{
 }
 p{
     font-size: 25px;
-    color: #fff;
+    color: #000000;
 }
 header{
     background-size: cover;
@@ -46,7 +46,7 @@ header h1{
 .contenedor .contenedor-items .item{
     max-width: 200px;
     margin: auto;
-    border: 1px solid #666;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding: 20px;
     transition: .3s;
@@ -55,7 +55,7 @@ header h1{
     width: 100%;
 }
 .contenedor .contenedor-items .item:hover{
-    box-shadow: 0 0 10px #666;
+    box-shadow: 0 0 10px #000000;
     scale: 1.05;
 }
 .contenedor .contenedor-items .item .titulo-item{
@@ -76,14 +76,14 @@ header h1{
     margin: 10px auto;
     border: none;
     background-color: black;
-    color: #fff;
+    color: #ffffff;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .carrito{
-    border: 1px solid #666;
+    border: 1px solid #000000;
     width: 35%;
     margin-top: 30px;
     border-radius: 10px;
@@ -96,8 +96,8 @@ header h1{
     opacity: 0;
 }
 .carrito .header-carrito{
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     padding: 30px 0;
 }
@@ -105,7 +105,7 @@ header h1{
     display: flex;
     align-items: center;
     position: relative;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #000000;
     padding: 20px;
 }
 .carrito .carrito-item img{
@@ -168,7 +168,7 @@ header h1{
 }
 
 .carrito-total{
-    background-color: #f3f3f3;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
 }
 .carrito-total .fila{
@@ -184,7 +184,7 @@ header h1{
     width: 100%;
     border: none;
     background: #000;
-    color: #fff;
+    color: #ffffff;
     border-radius: 5px;
     font-size: 18px;
     padding: 20px;
